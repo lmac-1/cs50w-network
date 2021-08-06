@@ -1,0 +1,62 @@
+html body {
+    background-color: #f3f3f3;
+}
+
+.box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.box-shadow-posts {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.likeicon {
+    color:#5AB572;
+}
+
+.likeicon-user:hover {
+    cursor: pointer;
+}
+
+.green-button {
+    background-color: #85A68E;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.pagination-green-inactive {
+    color: #85A68E;
+}
+
+.pagination-green-inactive:hover {
+    color: #80A189;
+   
+}
+
+.test {
+    background-color: red;
+}
+
+.cancel-badge {
+    border-color: #A67475;
+    color: #A67475;
+    transition: color .2s ease-in-out, background-color .2s ease-in-out,border-color .2s ease-in-out;
+}
+
+.cancel-badge:hover {
+    background-color: #A67475;
+    color: white;
+    border-color: #A67475;
+}
+
+a {
+    color: #85A68E;
+}
+
+a:hover {
+    color: #577860;
+}
+
+.green-button:hover {
+    background-color: #71927A;
+    border-color: #577860;
+}

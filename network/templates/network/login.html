@@ -1,0 +1,32 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+
+    <div class="d-flex pt-5 flex-column align-content-center justify-content-center">
+        
+        <div class="align-self-center text-center border p-5 bg-light">
+            
+            <h2 class="pb-3">Login</h2>
+
+            {% for message in messages %}
+                <div class="alert {{ message.tags }}" role="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+            
+            <form action="{% url 'login' %}" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <input autofocus class="form-control" type="text" name="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" name="password" placeholder="Password" required>
+                </div>
+                <input class="btn green-button my-2 btn-block" type="submit" value="Login">
+            </form>
+
+            <small>Don't have an account? <a href="{% url 'register' %}">Register here.</a></small>
+
+        </div>
+    </div>
+{% endblock %}
